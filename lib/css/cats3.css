@@ -1,0 +1,875 @@
+ /* Cats2.css
+##############################################
+          General
+##############################################
+ */
+
+ * {
+   margin: 0;
+   padding: 0;
+   cursor: default;
+   box-sizing: border-box;
+ }
+
+ html,
+ body {
+   font-size: 16px;
+   /* min-height: 100vh; */
+   /* min-height: 100%; */
+   height: 100%;
+   min-width: 600px;
+ }
+
+ body {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   font: 0.95em Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   border-left: 1px solid #aaa;
+   border-right: 1px solid #aaa;
+ }
+
+ /* needed to turn a submenu off */
+ #bodymask {
+   z-index: 5000;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ .nodisplay_important {
+   display: none !important;
+ }
+
+ .nodisplay {
+   display: none;
+ }
+
+ .yesdisplay_important {
+   display: inline-block !important;
+ }
+
+ button {
+   margin: 0.5em;
+   margin: 0.5rem;
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+
+ input,
+ body {
+   /* Prevents text from being selected */
+   -webkit-touch-callout: none;
+   /* iOS Safari */
+   -webkit-user-select: none;
+   /* Safari */
+   -khtml-user-select: none;
+   /* Konqueror HTML */
+   -moz-user-select: none;
+   /* Firefox */
+   -ms-user-select: none;
+   /* Internet Explorer/Edge */
+   user-select: none;
+   /* Non-prefixed version, currently supported by Chrome and Opera */
+ }
+
+ hr {
+   border: none;
+   height: 1px;
+   color: #888;
+   /* old IE */
+   background-color: #888;
+   /* Modern Browsers */
+ }
+
+ /* 
+Styles for message which displays while the DOM is loading
+ */
+ #eggDiv {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #ccc;
+   position: absolute;
+   z-index: 8000;
+   width: 100%;
+   height: 100%;
+ }
+
+ #egg {
+   animation: changeFill 0.8s linear infinite alternate;
+ }
+
+ @keyframes changeFill {
+   0% {
+     fill: #222;
+     stroke: #000;
+     stroke-width: 10;
+   }
+
+   100% {
+     fill: #000;
+     stroke: #222;
+     stroke-width: 20;
+   }
+ }
+
+ /*    
+  the box class is needed for startupbox, myExplorer, unlockbox, creatorloginbox, getqnakeybox, adminbox, msgbox, yesnobox, loading, flashbox, endbox, unlockbox and for spinner div 
+*/
+ .box {
+   border: 2px solid black;
+   position: absolute;
+   z-index: 600;
+   padding: 1em 2em;
+   background-color: #ddd;
+   box-shadow: 0px 0px 6px 3px #222;
+   -moz-box-shadow: 0px 0px 6px 3px #222;
+   -webkit-box-shadow: 0px 0px 6px 3px #222;
+   text-align: center;
+ }
+
+ /* *******************************************
+   the box and mask for messages and yesno
+******************************************* */
+ #msgbox {
+   z-index: 4000;
+   text-align: center;
+   border: 2px solid black;
+   border-radius: 4px;
+   position: absolute;
+   padding: 1em 3em;
+   -webkit-box-shadow: 0px 0px 6px 3px #222;
+   -moz-box-shadow: 0px 0px 6px 3px #222;
+   box-shadow: 0px 0px 6px 3px #222;
+ }
+
+ #msgboxmask {
+   z-index: 3500;
+   top: 0;
+   left: 0;
+   /* position: absolute; */
+   position: fixed;
+   background-color: #aaa;
+   opacity: 0.6;
+   width: 100%;
+   height: 100%;
+ }
+
+ /* *********************************************
+   the loading spinner and its mask
+********************************************* */
+ #loading {
+   z-index: 5000;
+   position: absolute;
+ }
+
+ #loadingmask {
+   z-index: 4500;
+   top: 0;
+   left: 0;
+   /* position: absolute; */
+   position: fixed;
+   background-color: #555;
+   opacity: 0.4;
+   width: 100%;
+   height: 100%;
+ }
+
+ /* *********************************************
+   for the context menu, ie right-clicking
+********************************************* */
+ #contextPopup,
+ #contextPopup .sub {
+   border: 1px solid #eee;
+   position: fixed;
+   z-index: 700;
+   background-color: #222;
+   color: #ddd;
+ }
+
+ #contextPopup>div,
+ #contextPopup .sub>div {
+   margin: 0.2em;
+   padding: 0.1em 0.8em;
+   font-size: 0.9rem;
+   white-space: nowrap;
+ }
+
+ #contextPopup>div:hover,
+ #contextPopup .sub>div:hover {
+   background-color: #444;
+   color: white;
+ }
+
+
+ /*
+ ***************************************
+           topdiv, bottomdiv and wrapper
+ ***************************************
+  */
+
+ #topdiv {
+   flex-shrink: 0;
+   width: 100%;
+   z-index: 700;
+   border-bottom: 2px solid #04d;
+   background-color: #000;
+   height: 80px;
+ }
+
+ #debug {
+   font-size: 0.3rem;
+   position: absolute;
+   color: #bbb;
+ }
+
+ #topdiv #siteName {
+   color: white;
+   text-shadow: 2px 1px 0px #09f;
+   left: -20000px;
+   font: 3.5em Cambria, 'Times New Roman', serif;
+   font-weight: bold;
+   margin: 0;
+   margin-top: 10px;
+   position: absolute;
+ }
+
+ #topdiv #pageName {
+   text-shadow: 1px 1px 0px white;
+   font: 1.5em Cambria, 'Times New Roman', serif;
+   font-weight: bold;
+   margin: 0 1%;
+   margin-top: 37px;
+   position: absolute;
+   color: #bbb;
+   padding: 0 10px;
+   white-space: nowrap;
+ }
+
+ #topmenucontainer {
+   margin-top: 30px;
+   background-color: #222;
+   position: absolute;
+ }
+
+ #topmenumask {
+   background-color: rgba(0, 0, 0, 0.2);
+   position: absolute;
+   z-index: 750;
+ }
+
+ #topdiv #theMenu {
+   list-style: none;
+   position: relative;
+   background-color: #000;
+ }
+
+ #topdiv .menu {
+   font: 0.9em Cambria, sans-serif;
+   display: inline-block;
+   position: relative;
+   cursor: pointer;
+   color: #ccc;
+   border: 1px solid white;
+   padding: 4px 11px;
+ }
+
+ #topdiv .menu:hover,
+ #topdiv #theMenu .chosen:hover,
+ .submenu:hover,
+ .aSubmenu .chosen:hover {
+   color: #eee;
+   background-color: #04d;
+ }
+
+ /* for submenus */
+ #topdiv ul li ul {
+   padding: 0;
+   position: absolute;
+   top: 25px;
+   left: -1px;
+   width: 120px;
+   /* default width of dropdown menu */
+   -webkit-box-shadow: 0px 1px 2px 1px #555;
+   -moz-box-shadow: 0px 1px 2px 1px #555;
+   box-shadow: 0px 1px 2px 1px #555;
+   border: 1px solid #eee;
+   z-index: 3000;
+   background-color: #222;
+ }
+
+ #topdiv ul li ul li {
+   display: block;
+   float: none;
+   padding: 0.3em;
+ }
+
+ #topdiv ul li:hover ul {
+   display: block;
+ }
+
+ #topdiv #theMenu .chosen,
+ .aSubmenu .chosen {
+   background-color: #07e;
+   color: white;
+ }
+
+ /* ===================================================== */
+
+ #bottomdiv {
+   background-color: #000;
+   color: #eee;
+   padding: 1px 10px;
+   border-top: 2px solid #04d;
+   position: relative;
+   z-index: 30;
+ }
+
+ /* ===================================================== */
+
+ #wrapper {
+   flex-grow: 1;
+   /* height: 100%; */
+   display: flex;
+   background: white;
+   position: relative;
+   z-index: 30;
+ }
+
+ /* #wrappermask {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 25;
+    left: 0;
+    right: 0;
+  } */
+
+ /* the sidebar and catlistdiv */
+ #sidebar {
+   flex-basis: 20%;
+   background-color: #222;
+   overflow: hidden;
+   border-right: 2px solid #777;
+ }
+
+ #sidebarHeading {
+   color: #eee;
+   margin: 0.2em 0;
+   padding: 0.1em 0;
+ }
+
+ #catlistdiv {
+   font-family: Arial, sans-serif;
+   line-height: 15px;
+   margin: 0 5% 10px 4%;
+   color: #ddd;
+   white-space: nowrap;
+ }
+
+ .subcatlistdiv {
+   margin-left: 10px;
+ }
+
+ #catlistdiv div.items {
+   margin-bottom: -1px;
+   padding: 3px 8px 3px 0px;
+ }
+
+ #catlistdiv span.indx {
+   display: inline-block;
+   width: 17px;
+   text-align: center;
+ }
+
+ #catlistdiv .itemName,
+ #catPopup {
+   font: 0.8rem Arial, sans-serif;
+   padding: 0 3px;
+   white-space: nowrap;
+ }
+
+ #catPopup {
+   position: absolute;
+   text-decoration: underline;
+   background-color: #222;
+   color: #ddd;
+   z-index: 50;
+ }
+
+ .catchosen {
+   background-color: #037 !important;
+   color: white !important;
+ }
+
+
+
+ /* the showArea and its contents */
+ #showArea {
+   /* display: flex; */
+   display: block;
+   /* flex-direction: column; */
+   flex-grow: 1;
+   background-color: #222;
+ }
+
+ #content {
+   background-color: #222;
+   color: #fff;
+   /* flex-grow: 1; */
+   height: 100%;
+   padding-left: 5px;
+ }
+
+ #content h3{
+  padding:50px 30px;
+ }
+
+
+ #formDialog {
+   border: 2px solid black;
+   position: relative;
+   z-index: 600;
+   padding: 1em 2em;
+   background-color: #ddd;
+   box-shadow: 0px 0px 6px 3px #fff;
+   -moz-box-shadow: 0px 0px 6px 3px #fff;
+   -webkit-box-shadow: 0px 0px 6px 3px #fff;
+   /* width: 80%; */
+   /* margin: 10px; */
+   margin: 20px;
+ }
+
+ #formDialog .h3_m {
+   padding: 0.4em 0;
+   margin: 0;
+ }
+
+ #formDialog input[type='text'],
+ #formDialog input[type='file'],
+ #formDialog textarea,
+ #formDialog select {
+   width: 95%;
+   font-family: Arial, sans-serif;
+   font-size: 0.9em;
+   border: 1px solid #666;
+   padding-left: 3px;
+ }
+
+ #formDialog input[type='file'] {
+   border-width: 0;
+   padding: 0;
+   background-color: #ffd;
+ }
+
+ .inputBlock {
+   margin: 8px 12px;
+ }
+
+ input[readonly="true"] {
+   background-color: #ffd;
+ }
+
+ #formDialog textarea {
+   margin: 0;
+ }
+
+ /* needed in formDialog for moving a category */
+ #formDialog .notActiveInput {
+   background-color: #ddd !important;
+ }
+
+ #formDialog #editButtons {
+   margin-top: 10px;
+   text-align: center;
+ }
+
+ #formDialog #radio span {
+   padding-left: 3px;
+   padding-right: 12px;
+ }
+
+ /* formDialog show hidden */
+ .hidden_1,
+ .hidden_2,
+ .hidden_3,
+ .hidden_4,
+ .hidden_5 {
+   /* display:none; */
+   display: block;
+ }
+
+ .levelName {
+   display: inline-block;
+   width: 160px;
+   padding-left: 6px;
+   padding-bottom: 1px;
+ }
+
+ .hiddenCheckbox {
+   display: inline-block;
+   padding-left: 15px;
+   padding-right: 6px;
+   padding-bottom: 1px;
+ }
+
+
+
+ /* #formDialogMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(80, 80, 80, 0.4);
+  background-color: red;
+  z-index: 550;
+} */
+
+
+
+ /* ****************************************
+          for display of photos
+**************************************** */
+
+ #pictureDialog {
+   border: 2px solid black;
+   position: fixed;
+   z-index: 800;
+   padding: 1rem 2rem;
+   padding: 1rem 0;
+   padding: 0.5rem 0;
+   padding: 0 0;
+   background-color: #ddd;
+   box-shadow: 0px 0px 6px 3px #fff;
+   -moz-box-shadow: 0px 0px 6px 3px #fff;
+   -webkit-box-shadow: 0px 0px 6px 3px #fff;
+   /* margin:auto; */
+ }
+
+ /* mask to cover the whole view */
+ #pictureDialogMask {
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.85);
+   z-index: 750;
+ }
+
+
+ .thumbHolder {
+   height: 176px;
+   width: 130px;
+   padding: 3px;
+   background-color: #444;
+   border: 1px solid white;
+   margin: 10px 5px;
+   float: left;
+   text-align: center;
+   overflow: hidden;
+ }
+
+ .photoTitle,
+ .photoDescription {
+   padding: 3px;
+ }
+
+
+ .pictureContainer {
+   display: flex;
+   /* align-items: center; */
+ }
+
+ .pictureHolder {
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   /* outline: 21px solid green; */
+ }
+
+ #left,
+ #right {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 20px;
+   height: 100%;
+   font-size: 1.8rem;
+ }
+
+ .pictureHolder img {
+   padding: 1px;
+   background-color: #ddd;
+   border: 1px solid black;
+   /* outline: 21px solid green; */
+ }
+
+ .photoTitle,
+ .photoDescription {
+   height: 22px;
+   max-height: 22px;
+   min-height: 22px;
+   white-space: nowrap;
+ }
+
+ /* .beforenext {
+  height:100%;
+  display:flex;
+  align-items: center;
+  padding :0 6px;
+  font-size: 2.5rem;
+} */
+
+
+
+ #startup {
+   padding: 20px;
+ }
+
+
+ /*
+ ***************************************
+           Audio volume slider
+ ***************************************
+  */
+
+ .roundCorners {
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   -khtml-border-radius: 10px;
+ }
+
+ #cont {
+   position: relative;
+   width: 100px;
+   height: 18px;
+   padding: 1px;
+   border: 2px solid #888;
+   background-color: white;
+ }
+
+ #ball {
+   position: relative;
+   width: 12px;
+   height: 12px;
+   background-color: #1b1b1b;
+ }
+
+ .cont_class {
+   position: relative;
+   width: 80px;
+   height: 18px;
+   padding: 1px;
+   border: 2px solid #888;
+   background-color: white;
+ }
+
+ .ball_class {
+   position: relative;
+   width: 12px;
+   height: 12px;
+   background-color: #1b1b1b;
+ }
+
+ /**** Styles for the box for getting the settings for the audio volumes */
+ .outer_sd {
+   width: 245px;
+   height: 2.5em;
+   position: relative;
+ }
+
+ .inner_sd {
+   position: absolute;
+   top: -1px;
+   right: 2px;
+ }
+
+ /* Audio volume slider.  END 
+    XXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+
+
+ /* edu styles 
+    ======================================= */
+
+
+
+ /* styles for showing the information at start, ie startupbox - also used for the unlockbox
+  ==============================================*/
+ .boxHead1_class {
+   padding: 0.2em 0;
+   font: 1.2em Cambria, 'Times New Roman', serif;
+   font-weight: bold;
+   text-decoration: underline;
+ }
+
+ .boxContent1_class {
+   font: 1.1em Cambria, 'Times New Roman', serif;
+   width: 570px;
+ }
+
+
+ /* style for showing the information at start 
+  ==============================================*/
+
+ /* .info_class {
+   display: inline-block;
+   margin: 0 6% 0.5em 3em;
+   padding: 0.2em 0;
+   font: 1.2em Cambria, 'Times New Roman', serif;
+   font-weight: bold;
+   text-decoration: underline;
+   cursor: pointer;
+ } */
+
+ /* .content_class {
+   margin: -0.6em 6% 0.5em 3em;
+   padding: 0 0.5em;
+   font: 1.1em Cambria, 'Times New Roman', serif;
+   width: 530px;
+ } */
+
+
+
+
+ /* ##############################################
+          from myExpl.css
+############################################## */
+
+ #myExplorer {
+   position: absolute;
+   cursor: default;
+   /*    Use normal arrow pointer */
+   /* box-sizing: border-box; */
+   /* display:flex;
+ align-items:center;
+ justify-content:center; */
+   z-index: 3000;
+   width: 530px;
+   background-color: #f8f8f8;
+   padding: 10px;
+   text-align: left;
+ }
+
+ .myExp_div1 {
+   float: left;
+   margin: 0 18px;
+ }
+
+ .myExp_h3_cls1 {
+   height: 24px;
+   font-size: 15px;
+   margin: 0;
+ }
+
+ .myExp_div2 {
+   width: 225px;
+   height: 225px;
+   border: solid 2px #888;
+   background: #fff;
+   overflow: auto;
+
+   padding: 5px;
+ }
+
+ .fileList li.wait {
+   background: url(./icon/spinner.gif) left top no-repeat;
+ }
+
+ /* File Extensions - I will only allow qna file types */
+ .fileList li>span.ext_qna {
+   background: url(./icon/world-1.gif) left top no-repeat;
+   /* background: url(./icon/file.png) left top no-repeat; */
+ }
+
+ .wait {
+   background: url(./icon/spinner.gif) left top no-repeat;
+ }
+
+ .directory {
+   display: inline-block;
+   /* background: url(./icon/directory.png) left top no-repeat; */
+   background: url(./icon/folder_closed.png) left top no-repeat;
+   width: 20px;
+   height: 16px;
+   margin-bottom: -3px;
+   margin-right: -2px;
+ }
+
+ .folder_open {
+   background: url(./icon/folder_open.png) left top no-repeat;
+ }
+
+ #myExplorer .itemName {
+   padding-left: 2px;
+   padding-right: 4px;
+   white-space: nowrap;
+ }
+
+ #myExplorer #itemPopup>span.itemName {
+   text-decoration: underline;
+ }
+
+ #myExplorer #itemPopup {
+   position: absolute;
+   background-color: #fff;
+   z-index: 3500;
+ }
+
+ #folders_div div.items>div {
+   position: relative;
+   margin-bottom: -1px;
+   white-space: nowrap;
+   height: 19px;
+ }
+
+ #files_div li>span {
+   padding-left: 19px;
+   padding-right: 4px;
+   line-height: 19px;
+ }
+
+ #files_div li>span:hover {
+   background-color: #eee;
+ }
+
+ .subcatlistdiv {
+   margin-left: 10px;
+ }
+
+ #myExplorer .itemName {
+   font-size: 13px;
+ }
+
+ #myExplorer .chosen {
+   /* background-color: #464 !important;
+ color: white; */
+   background-color: #ddd !important;
+ }
+
+ #myExplorer span.indx {
+   position: absolute;
+   width: 14px;
+ }
+
+ #myExplorer span {
+   margin: 0;
+   padding: 0;
+ }
+
+ #myExplorer .holder {
+   margin-left: 16px;
+ }
