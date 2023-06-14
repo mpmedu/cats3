@@ -4,27 +4,27 @@
 			"path": "lib/css/cats3.css",
 			"bookmarks": [
 				{
-					"line": 217,
+					"line": 256,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 336,
+					"line": 375,
 					"column": 7,
 					"label": ""
 				},
 				{
-					"line": 437,
+					"line": 492,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 543,
+					"line": 584,
 					"column": 6,
 					"label": ""
 				},
 				{
-					"line": 751,
+					"line": 792,
 					"column": 6,
 					"label": ""
 				}
@@ -34,27 +34,27 @@
 			"path": "lib/js/myapp.js",
 			"bookmarks": [
 				{
-					"line": 266,
+					"line": 267,
 					"column": 14,
 					"label": ""
 				},
 				{
-					"line": 485,
+					"line": 489,
 					"column": 10,
 					"label": ""
 				},
 				{
-					"line": 924,
+					"line": 935,
 					"column": 14,
 					"label": ""
 				},
 				{
-					"line": 1257,
+					"line": 1223,
 					"column": 10,
 					"label": ""
 				},
 				{
-					"line": 1449,
+					"line": 1466,
 					"column": 12,
 					"label": ""
 				}
@@ -69,32 +69,32 @@
 					"label": ""
 				},
 				{
-					"line": 54,
+					"line": 55,
 					"column": 14,
 					"label": ""
 				},
 				{
-					"line": 167,
+					"line": 75,
 					"column": 9,
 					"label": "sidebar"
 				},
 				{
-					"line": 267,
+					"line": 183,
 					"column": 13,
 					"label": "formDialog"
 				},
 				{
-					"line": 376,
+					"line": 334,
 					"column": 13,
 					"label": ""
 				},
 				{
-					"line": 425,
+					"line": 371,
 					"column": 17,
 					"label": ""
 				},
 				{
-					"line": 564,
+					"line": 514,
 					"column": 16,
 					"label": ""
 				}
@@ -104,17 +104,17 @@
 			"path": "lib/js/hc_photos.js",
 			"bookmarks": [
 				{
-					"line": 15,
+					"line": 11,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 59,
+					"line": 132,
 					"column": 10,
 					"label": ""
 				},
 				{
-					"line": 88,
+					"line": 162,
 					"column": 12,
 					"label": ""
 				}
@@ -139,7 +139,7 @@
 					"label": ""
 				},
 				{
-					"line": 120,
+					"line": 138,
 					"column": 10,
 					"label": ""
 				}
@@ -151,6 +151,11 @@
 				{
 					"line": 87,
 					"column": 8,
+					"label": ""
+				},
+				{
+					"line": 208,
+					"column": 25,
 					"label": ""
 				},
 				{
@@ -166,6 +171,11 @@
 				{
 					"line": 531,
 					"column": 20,
+					"label": ""
+				},
+				{
+					"line": 892,
+					"column": 18,
 					"label": ""
 				}
 			]
