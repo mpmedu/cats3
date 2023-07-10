@@ -4,27 +4,27 @@
 			"path": "lib/css/cats3.css",
 			"bookmarks": [
 				{
-					"line": 256,
+					"line": 238,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 375,
+					"line": 354,
 					"column": 7,
 					"label": ""
 				},
 				{
-					"line": 492,
+					"line": 453,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 584,
+					"line": 571,
 					"column": 6,
 					"label": ""
 				},
 				{
-					"line": 792,
+					"line": 760,
 					"column": 6,
 					"label": ""
 				}
@@ -34,27 +34,27 @@
 			"path": "lib/js/myapp.js",
 			"bookmarks": [
 				{
-					"line": 267,
+					"line": 211,
 					"column": 14,
 					"label": ""
 				},
 				{
-					"line": 489,
+					"line": 306,
 					"column": 10,
 					"label": ""
 				},
 				{
-					"line": 935,
+					"line": 741,
 					"column": 14,
 					"label": ""
 				},
 				{
-					"line": 1223,
+					"line": 1021,
 					"column": 10,
 					"label": ""
 				},
 				{
-					"line": 1466,
+					"line": 1417,
 					"column": 12,
 					"label": ""
 				}
@@ -64,38 +64,43 @@
 			"path": "lib/js/handlers.js",
 			"bookmarks": [
 				{
-					"line": 18,
+					"line": 16,
 					"column": 11,
 					"label": ""
 				},
 				{
-					"line": 55,
+					"line": 52,
 					"column": 14,
 					"label": ""
 				},
 				{
-					"line": 75,
+					"line": 72,
 					"column": 9,
 					"label": "sidebar"
 				},
 				{
-					"line": 183,
+					"line": 184,
 					"column": 13,
 					"label": "formDialog"
 				},
 				{
-					"line": 334,
+					"line": 356,
 					"column": 13,
 					"label": ""
 				},
 				{
-					"line": 371,
+					"line": 378,
 					"column": 17,
 					"label": ""
 				},
 				{
-					"line": 514,
-					"column": 16,
+					"line": 510,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 521,
+					"column": 14,
 					"label": ""
 				}
 			]
@@ -104,17 +109,17 @@
 			"path": "lib/js/hc_photos.js",
 			"bookmarks": [
 				{
-					"line": 11,
+					"line": 8,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 132,
+					"line": 130,
 					"column": 10,
 					"label": ""
 				},
 				{
-					"line": 162,
+					"line": 156,
 					"column": 12,
 					"label": ""
 				}
@@ -124,23 +129,18 @@
 			"path": "lib/js/hc_categories2.js",
 			"bookmarks": [
 				{
-					"line": 12,
+					"line": 8,
 					"column": 9,
 					"label": ""
 				},
 				{
-					"line": 55,
+					"line": 51,
 					"column": 13,
 					"label": ""
 				},
 				{
-					"line": 88,
+					"line": 84,
 					"column": 8,
-					"label": ""
-				},
-				{
-					"line": 138,
-					"column": 10,
 					"label": ""
 				}
 			]
@@ -149,33 +149,33 @@
 			"path": "lib/php/pCatClass.php",
 			"bookmarks": [
 				{
-					"line": 87,
+					"line": 86,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 208,
+					"line": 207,
 					"column": 25,
 					"label": ""
 				},
 				{
-					"line": 386,
+					"line": 388,
 					"column": 21,
 					"label": ""
 				},
 				{
-					"line": 446,
+					"line": 450,
 					"column": 20,
 					"label": ""
 				},
 				{
-					"line": 531,
-					"column": 20,
+					"line": 722,
+					"column": 13,
 					"label": ""
 				},
 				{
-					"line": 892,
-					"column": 18,
+					"line": 1052,
+					"column": 16,
 					"label": ""
 				}
 			]

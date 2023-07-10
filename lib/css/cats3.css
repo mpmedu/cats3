@@ -14,10 +14,8 @@
  html,
  body {
    font-size: 16px;
-   /* min-height: 100vh; */
-   /* min-height: 100%; */
-   height: 100%;
-   min-width: 600px;
+   min-height: 100vh;
+   min-width: 500px;
  }
 
  body {
@@ -33,8 +31,8 @@
  #bodymask {
    z-index: 5000;
    position: fixed;
-   width: 100%;
-   height: 100%;
+   width: 100vw;
+   height: 100vh;
    top: 0;
    left: 0;
  }
@@ -56,7 +54,6 @@
  }
 
  button {
-   margin: 0.5em;
    margin: 0.5rem;
    padding-left: 10px;
    padding-right: 10px;
@@ -88,19 +85,11 @@
    /* Modern Browsers */
  }
 
- /* this also works for me
- input[type=checkbox], input[type=radio] {
-  vertical-align: -2px;
-} */
-
  input[type=checkbox],
  input[type=radio] {
    vertical-align: middle;
    position: relative;
-   bottom: .08em;
-   /* this is a better value for different fonts! */
    bottom: .14em;
-   /* my best value */
  }
 
  /* 
@@ -169,7 +158,6 @@ Styles for message which displays while the DOM is loading
    z-index: 3500;
    top: 0;
    left: 0;
-   /* position: absolute; */
    position: fixed;
    background-color: #aaa;
    opacity: 0.6;
@@ -189,7 +177,6 @@ Styles for message which displays while the DOM is loading
    z-index: 4500;
    top: 0;
    left: 0;
-   /* position: absolute; */
    position: fixed;
    background-color: #555;
    opacity: 0.4;
@@ -223,44 +210,47 @@ Styles for message which displays while the DOM is loading
    color: white;
  }
 
- /* [] */
  #frame {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+   display: flex;
+   align-items: center;
+   justify-content: center;
    width: 60px;
    height: 75px;
    border: 2px solid black;
    position: absolute;
    z-index: 600;
-   /* padding: 1em 2em; */
    background-color: #ddd;
    box-shadow: 0px 0px 6px 3px #222;
    -moz-box-shadow: 0px 0px 6px 3px #222;
    -webkit-box-shadow: 0px 0px 6px 3px #222;
-   /* text-align: center; */
-   /* vertical-align: middle; */
  }
 
- #frame img{
-  width:54px;
+ #frame img {
+   width: 54px;
  }
 
 
  /*
  ***************************************
-           topdiv, bottomdiv and wrapper
+     topdiv, bottomdiv and wrapper
  ***************************************
   */
 
  #topdiv {
    flex-shrink: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
    width: 100%;
    z-index: 700;
    border-bottom: 2px solid #04d;
    background-color: #000;
-   height: 80px;
+   min-height: 80px;
+ }
+
+ #topdiv #site {
+   margin-left: 10%;
  }
 
  #debug {
@@ -272,36 +262,25 @@ Styles for message which displays while the DOM is loading
  #topdiv #siteName {
    color: white;
    text-shadow: 2px 1px 0px #09f;
-   left: -20000px;
-   font: 3.5em Cambria, 'Times New Roman', serif;
+   font: 48px Cambria, 'Times New Roman', serif;
+   /* font: 3.5em Cambria, 'Times New Roman', serif; */
    font-weight: bold;
-   margin: 0;
-   margin-top: 10px;
-   position: absolute;
  }
 
  #topdiv #pageName {
    text-shadow: 1px 1px 0px white;
-   font: 1.5em Cambria, 'Times New Roman', serif;
+   font: 24px Cambria, 'Times New Roman', serif;
+   /* font: 1.5em Cambria, 'Times New Roman', serif; */
    font-weight: bold;
-   margin: 0 1%;
-   margin-top: 37px;
-   position: absolute;
    color: #bbb;
    padding: 0 10px;
    white-space: nowrap;
  }
 
  #topmenucontainer {
-   margin-top: 30px;
-   background-color: #222;
-   position: absolute;
- }
+   margin: 15px 10%;
+   align-self: flex-end;
 
- #topmenumask {
-   background-color: rgba(0, 0, 0, 0.2);
-   position: absolute;
-   z-index: 750;
  }
 
  #topdiv #theMenu {
@@ -375,38 +354,27 @@ Styles for message which displays while the DOM is loading
 
  #wrapper {
    flex-grow: 1;
-   /* height: 100%; */
    display: flex;
    background: white;
    position: relative;
    z-index: 30;
  }
 
- /* #wrappermask {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.1);
-    background-color: rgba(0, 0, 0, 0.3);
-    background-color: rgba(0, 0, 0, 0.2);
-    background-color: rgba(0, 0, 0, 0.15);
-    z-index: 25;
-    left: 0;
-    right: 0;
-  } */
-
  /* the sidebar and catlistdiv */
  #sidebar {
-   flex-basis: 20%;
+   min-width: 20%;
    background-color: #222;
    overflow: hidden;
    border-right: 2px solid #777;
-
    position: relative;
  }
 
  #sidebarHeading {
+   text-align: left;
+   cursor: default;
    color: #eee;
-   margin: 0.2em 0;
-   padding: 0.1em 0;
+   margin: 0.2rem 1.5rem;
+   padding: 0.1rem 0;
  }
 
  #catlistdiv {
@@ -454,10 +422,8 @@ Styles for message which displays while the DOM is loading
 
  #bin {
    position: absolute;
-   /* z-index: 1000; */
    width: 100%;
    height: 95%;
-   /* background-color: rgba(20, 20, 20, 0.85); */
    background-color: rgba(35, 35, 35, 0.9);
    color: #fff;
    top: 30px;
@@ -469,20 +435,15 @@ Styles for message which displays while the DOM is loading
 
  /* the showArea and its contents */
  #showArea {
-   /* display: flex; */
-   display: block;
-   /* flex-direction: column; */
-   /* flex-grow: 1; */
-   width: 100%;
+   flex-grow: 6;
    background-color: #222;
  }
 
  #content {
    background-color: #222;
    color: #fff;
-   /* flex-grow: 1; */
    height: 100%;
-   padding-left: 5px;
+   padding: 5px;
  }
 
  #content h3 {
@@ -500,15 +461,17 @@ Styles for message which displays while the DOM is loading
    box-shadow: 0px 0px 6px 3px #fff;
    -moz-box-shadow: 0px 0px 6px 3px #fff;
    -webkit-box-shadow: 0px 0px 6px 3px #fff;
-   /* width:auto; */
-   /* width: 80%; */
-   /* margin: 10px; */
    margin: 20px;
  }
 
  #formDialog .h3_m {
-   padding: 0.4em 0;
+   /* padding: 0.4em 0; */
+   padding: 0.5rem;
    margin: 0;
+ }
+
+ #formDialog ol {
+   margin-left: 1.5rem;
  }
 
  #formDialog input[type='text'],
@@ -555,13 +518,12 @@ Styles for message which displays while the DOM is loading
    padding-right: 12px;
  }
 
- /* formDialog show hidden */
+ /*  hidden in formDialog*/
  .hidden_1,
  .hidden_2,
  .hidden_3,
  .hidden_4,
  .hidden_5 {
-   /* display:none; */
    display: block;
  }
 
@@ -582,7 +544,7 @@ Styles for message which displays while the DOM is loading
           for display of photos
 **************************************** */
 
- #pictureDialog {
+ #showDialog {
    border: 2px solid black;
    position: fixed;
    z-index: 800;
@@ -594,11 +556,10 @@ Styles for message which displays while the DOM is loading
    box-shadow: 0px 0px 6px 3px #fff;
    -moz-box-shadow: 0px 0px 6px 3px #fff;
    -webkit-box-shadow: 0px 0px 6px 3px #fff;
-   /* margin:auto; */
  }
 
  /* mask to cover the whole view */
- #pictureDialogMask {
+ #showDialogMask {
    position: fixed;
    top: 0;
    left: 0;
@@ -609,67 +570,75 @@ Styles for message which displays while the DOM is loading
  }
 
 
- .thumbHolder {
+ .thumbPhoto {
    height: 176px;
    width: 130px;
    padding: 3px;
    background-color: #444;
    border: 1px solid white;
-   margin: 10px 5px;
+   margin: 5px;
    float: left;
    text-align: center;
    overflow: hidden;
  }
 
- .photoTitle,
- .photoDescription {
+ .itemTitle {
    padding: 3px;
- }
-
-
- .pictureContainer {
-   display: flex;
-   /* align-items: center; */
- }
-
- .pictureHolder {
-   display: flex;
-   flex-direction: column;
-   overflow: hidden;
-   /* outline: 21px solid green; */
- }
-
- #left,
- #right {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 20px;
-   height: 100%;
-   font-size: 1.8rem;
- }
-
- .pictureHolder img {
-   padding: 1px;
-   background-color: #ddd;
-   border: 1px solid black;
-   /* outline: 21px solid green; */
- }
-
- .photoTitle,
- .photoDescription {
+   font-weight: 600;
    height: 22px;
-   max-height: 22px;
-   min-height: 22px;
    white-space: nowrap;
  }
 
- /* .beforenext {
-  height:100%;
+ #itemContainer {
+   display: flex;
+   justify-content: center;
+   /* padding:0 3px; */
+   padding:0 5px 5px;
+ }
+
+ .itemHolder {
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+ }
+
+ .itemHolder img {
+   border: 1px solid black;
+ }
+
+ .itemHolder video {
+   /* border: 1px solid black; */
+   width:100%
+ }
+
+
+ .thumbVideo {
+  position: relative;
+  background-color: #444;
+  border: 1px solid white;
+   margin: 5px;
+  float:left;
+}
+
+.thumbVideo video {
+  width: 150px;
+  height: 100px;
+
+}
+
+.thumbVideo img {
+  position: absolute;
+  left: 51px;
+  top: 40px;
+  z-index: 10;
+}
+
+
+
+/* #videoContainer {
   display:flex;
-  align-items: center;
-  padding :0 6px;
-  font-size: 2.5rem;
+  justify-content: center;
+  padding: 0 5px 5px;
 } */
 
 
@@ -782,7 +751,6 @@ Styles for message which displays while the DOM is loading
    font: 1.1em Cambria, 'Times New Roman', serif;
    width: 530px;
  } */
-
 
 
 
@@ -913,4 +881,42 @@ Styles for message which displays while the DOM is loading
 
  #myExplorer .holder {
    margin-left: 16px;
+ }
+
+
+
+
+ :root {
+   --light-grey: #eee;
+   --ff-my-grey: var(--light-grey);
+ }
+
+ @media (max-width:500px) {
+
+   /* #topdiv {
+     background-color: red;
+     color:var(--ff-my-grey);
+   } */
+
+   html,
+   body {
+     font-size: 20px;
+   }
+
+   #wrapper {
+     flex-direction: column;
+   }
+
+   #sidebar {
+     border-bottom: 1px solid #aaa;
+   }
+
+   #showArea {
+     display: flex;
+   }
+
+   #sidebarHeading {
+     margin: 0.2rem 7.5%;
+   }
+
  }
