@@ -214,19 +214,23 @@ Styles for message which displays while the DOM is loading
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 60px;
-   height: 75px;
-   border: 2px solid black;
+   /* width: 60px; */
+   /* height: 75px; */
+   border: 1px solid black;
    position: absolute;
    z-index: 600;
    background-color: #ddd;
-   box-shadow: 0px 0px 6px 3px #222;
-   -moz-box-shadow: 0px 0px 6px 3px #222;
-   -webkit-box-shadow: 0px 0px 6px 3px #222;
+   box-shadow: 0px 0px 1px 1px #222;
+   -moz-box-shadow: 0px 0px 1px 1px #222;
+   -webkit-box-shadow: 0px 0px 1px 1px #222;
  }
 
  #frame img {
-   width: 54px;
+   width: 60px;
+ }
+
+ #frame video{
+  width:100px;
  }
 
 
@@ -247,11 +251,24 @@ Styles for message which displays while the DOM is loading
    border-bottom: 2px solid #04d;
    background-color: #000;
    min-height: 80px;
+   min-height: 70px;
  }
 
  #topdiv #site {
-   margin-left: 10%;
+  display:flex;
+  align-items: center;
  }
+
+ #topdiv #profile {
+  display:flex;
+  justify-content: center;
+  /* image height is always 50px so make it 2px more to cater for border */
+  height:52px;
+  min-width: 32px;
+  background-color: #222;
+  border:1px solid #ccc;
+  margin: 6px 1.5rem;
+}
 
  #debug {
    font-size: 0.3rem;
@@ -263,14 +280,12 @@ Styles for message which displays while the DOM is loading
    color: white;
    text-shadow: 2px 1px 0px #09f;
    font: 48px Cambria, 'Times New Roman', serif;
-   /* font: 3.5em Cambria, 'Times New Roman', serif; */
    font-weight: bold;
  }
 
  #topdiv #pageName {
    text-shadow: 1px 1px 0px white;
    font: 24px Cambria, 'Times New Roman', serif;
-   /* font: 1.5em Cambria, 'Times New Roman', serif; */
    font-weight: bold;
    color: #bbb;
    padding: 0 10px;
@@ -278,9 +293,8 @@ Styles for message which displays while the DOM is loading
  }
 
  #topmenucontainer {
-   margin: 15px 10%;
+   margin: 15px 4%;
    align-self: flex-end;
-
  }
 
  #topdiv #theMenu {
@@ -623,7 +637,6 @@ Styles for message which displays while the DOM is loading
 .thumbVideo video {
   width: 150px;
   height: 100px;
-
 }
 
 .thumbVideo img {
@@ -632,15 +645,6 @@ Styles for message which displays while the DOM is loading
   top: 40px;
   z-index: 10;
 }
-
-
-
-/* #videoContainer {
-  display:flex;
-  justify-content: center;
-  padding: 0 5px 5px;
-} */
-
 
 
  #startup {
