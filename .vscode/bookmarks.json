@@ -4,27 +4,22 @@
 			"path": "lib/css/cats3.css",
 			"bookmarks": [
 				{
-					"line": 242,
+					"line": 244,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 368,
+					"line": 404,
 					"column": 7,
 					"label": ""
 				},
 				{
-					"line": 467,
+					"line": 513,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 585,
-					"column": 6,
-					"label": ""
-				},
-				{
-					"line": 764,
+					"line": 801,
 					"column": 6,
 					"label": ""
 				}
@@ -34,28 +29,43 @@
 			"path": "lib/js/myapp.js",
 			"bookmarks": [
 				{
-					"line": 222,
+					"line": 231,
 					"column": 14,
-					"label": ""
+					"label": "setState"
 				},
 				{
-					"line": 317,
+					"line": 330,
 					"column": 10,
-					"label": ""
+					"label": "catClass"
 				},
 				{
-					"line": 734,
-					"column": 14,
-					"label": ""
+					"line": 802,
+					"column": 13,
+					"label": "showFormDialog"
 				},
 				{
-					"line": 1024,
+					"line": 921,
+					"column": 15,
+					"label": "fillInInput"
+				},
+				{
+					"line": 1088,
+					"column": 28,
+					"label": "initItemEditClass"
+				},
+				{
+					"line": 1384,
 					"column": 10,
-					"label": ""
+					"label": "membersClass"
 				},
 				{
-					"line": 1421,
-					"column": 12,
+					"line": 1458,
+					"column": 7,
+					"label": "end of membersClass"
+				},
+				{
+					"line": 1871,
+					"column": 4,
 					"label": ""
 				}
 			]
@@ -64,84 +74,39 @@
 			"path": "lib/js/handlers.js",
 			"bookmarks": [
 				{
-					"line": 16,
+					"line": 28,
 					"column": 11,
-					"label": ""
+					"label": "topmenu"
 				},
 				{
-					"line": 52,
+					"line": 64,
 					"column": 14,
-					"label": ""
+					"label": "catPopup"
 				},
 				{
-					"line": 72,
+					"line": 84,
 					"column": 9,
 					"label": "sidebar"
 				},
 				{
-					"line": 183,
-					"column": 13,
+					"line": 230,
+					"column": 14,
 					"label": "formDialog"
 				},
 				{
-					"line": 360,
-					"column": 13,
-					"label": ""
-				},
-				{
-					"line": 379,
+					"line": 398,
 					"column": 17,
-					"label": ""
+					"label": "contextmenu"
 				},
 				{
-					"line": 511,
-					"column": 0,
-					"label": ""
-				},
-				{
-					"line": 525,
-					"column": 14,
-					"label": ""
-				}
-			]
-		},
-		{
-			"path": "lib/js/hc_photos.js",
-			"bookmarks": [
-				{
-					"line": 8,
-					"column": 8,
-					"label": ""
-				},
-				{
-					"line": 130,
+					"line": 520,
 					"column": 10,
-					"label": ""
+					"label": "contextPopup"
 				},
 				{
-					"line": 156,
+					"line": 587,
 					"column": 12,
-					"label": ""
-				}
-			]
-		},
-		{
-			"path": "lib/js/hc_categories2.js",
-			"bookmarks": [
-				{
-					"line": 8,
-					"column": 9,
-					"label": ""
-				},
-				{
-					"line": 51,
-					"column": 13,
-					"label": ""
-				},
-				{
-					"line": 84,
-					"column": 8,
-					"label": ""
+					"label": "keydown"
 				}
 			]
 		},
@@ -149,33 +114,53 @@
 			"path": "lib/php/iDocsClass.php",
 			"bookmarks": [
 				{
-					"line": 96,
+					"line": 110,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 374,
+					"line": 421,
 					"column": 25,
-					"label": ""
+					"label": "addCategory"
 				},
 				{
-					"line": 555,
+					"line": 602,
 					"column": 21,
-					"label": ""
+					"label": "makemarrays"
 				},
 				{
-					"line": 617,
+					"line": 686,
 					"column": 20,
-					"label": ""
+					"label": "addItems"
 				},
 				{
-					"line": 921,
-					"column": 13,
-					"label": ""
+					"line": 1212,
+					"column": 7,
+					"label": "addMember"
 				},
 				{
-					"line": 1251,
+					"line": 1483,
 					"column": 16,
+					"label": "end of IDocsClass"
+				}
+			]
+		},
+		{
+			"path": "lib/js/hc_all.js",
+			"bookmarks": [
+				{
+					"line": 62,
+					"column": 9,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "lib/js/myappmeta.js",
+			"bookmarks": [
+				{
+					"line": 27,
+					"column": 8,
 					"label": ""
 				}
 			]

@@ -144,11 +144,12 @@ Styles for message which displays while the DOM is loading
 ******************************************* */
  #msgbox {
    z-index: 4000;
+   max-width: 400px;
    text-align: center;
    border: 2px solid black;
    border-radius: 4px;
    position: absolute;
-   padding: 1em 3em;
+   padding: 1rem 1.5rem;
    -webkit-box-shadow: 0px 0px 6px 3px #222;
    -moz-box-shadow: 0px 0px 6px 3px #222;
    box-shadow: 0px 0px 6px 3px #222;
@@ -189,12 +190,13 @@ Styles for message which displays while the DOM is loading
 ********************************************* */
  #contextPopup,
  #contextPopup .sub {
-   border: 1px solid #eee;
+   border: 1px solid #000;
    position: fixed;
    z-index: 700;
-   background-color: #222;
-   color: #ddd;
+   background-color: #ddd;
+   color: #222;
  }
+
 
  #contextPopup>div,
  #contextPopup .sub>div {
@@ -245,6 +247,7 @@ Styles for message which displays while the DOM is loading
    display: flex;
    justify-content: space-between;
    align-items: center;
+   /* align-items: baseline; */
    flex-wrap: wrap;
    width: 100%;
    z-index: 700;
@@ -254,10 +257,16 @@ Styles for message which displays while the DOM is loading
    min-height: 70px;
  }
 
- #topdiv #site {
+ #topdiv #topdivLeft,   #topdiv #topdivRight{
   display:flex;
   align-items: center;
+  /* align-items: baseline; */
  }
+
+ #topdiv #topdivRight{
+  margin: 0.8rem 1rem;
+ }
+
 
  #topdiv #profile {
   display:flex;
@@ -281,6 +290,7 @@ Styles for message which displays while the DOM is loading
    text-shadow: 2px 1px 0px #09f;
    font: 48px Cambria, 'Times New Roman', serif;
    font-weight: bold;
+   margin-top:5px;
  }
 
  #topdiv #pageName {
@@ -290,11 +300,13 @@ Styles for message which displays while the DOM is loading
    color: #bbb;
    padding: 0 10px;
    white-space: nowrap;
+   margin-top:20px;
+
  }
 
  #topmenucontainer {
-   margin: 15px 4%;
-   align-self: flex-end;
+   margin: 10px 15px 0;
+   /* margin-top: 10px; */
  }
 
  #topdiv #theMenu {
@@ -353,6 +365,30 @@ Styles for message which displays while the DOM is loading
    color: white;
  }
 
+ #topdiv #memberPhoto{
+  width:40px;
+  height:40px;
+  background-color: #222;
+  border:1px solid #ccc;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -khtml-border-radius: 20px;
+  overflow: hidden;
+ }
+
+ #topdiv #memberPhoto img{
+
+  /* width:40px; */
+  /* height:40px; */
+max-width: 40px;
+max-height: 40px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -khtml-border-radius: 20px;
+ }
+
  /* ===================================================== */
 
  #bottomdiv {
@@ -381,6 +417,16 @@ Styles for message which displays while the DOM is loading
    overflow: hidden;
    border-right: 2px solid #777;
    position: relative;
+ }
+
+ #sidebarMask{
+  width:100%;
+  height:100%;
+  background-color: rgba(35, 35, 35, 0.9);
+  z-index: 10;
+  position:absolute;
+  top:0;
+  left:0;
  }
 
  #sidebarHeading {
@@ -502,7 +548,7 @@ Styles for message which displays while the DOM is loading
  #formDialog input[type='file'] {
    border-width: 0;
    padding: 0;
-   background-color: #ffd;
+   /* background-color: #ffd; */
  }
 
  .inputBlock {
@@ -530,15 +576,6 @@ Styles for message which displays while the DOM is loading
  #formDialog #radio span {
    padding-left: 3px;
    padding-right: 12px;
- }
-
- /*  hidden in formDialog*/
- .hidden_1,
- .hidden_2,
- .hidden_3,
- .hidden_4,
- .hidden_5 {
-   display: block;
  }
 
  .levelName {
@@ -922,5 +959,10 @@ Styles for message which displays while the DOM is loading
    #sidebarHeading {
      margin: 0.2rem 7.5%;
    }
+
+   #topdiv #topdivRight{
+    margin-bottom: 10px;
+   }
+  
 
  }
