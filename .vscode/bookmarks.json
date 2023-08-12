@@ -9,17 +9,17 @@
 					"label": ""
 				},
 				{
-					"line": 404,
+					"line": 396,
 					"column": 7,
 					"label": ""
 				},
 				{
-					"line": 513,
+					"line": 505,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 801,
+					"line": 869,
 					"column": 6,
 					"label": ""
 				}
@@ -29,7 +29,7 @@
 			"path": "lib/js/myapp.js",
 			"bookmarks": [
 				{
-					"line": 231,
+					"line": 222,
 					"column": 14,
 					"label": "setState"
 				},
@@ -39,34 +39,34 @@
 					"label": "catClass"
 				},
 				{
-					"line": 802,
-					"column": 13,
+					"line": 799,
+					"column": 15,
 					"label": "showFormDialog"
 				},
 				{
-					"line": 921,
-					"column": 15,
+					"line": 914,
+					"column": 16,
 					"label": "fillInInput"
 				},
 				{
-					"line": 1088,
-					"column": 28,
-					"label": "initItemEditClass"
+					"line": 1110,
+					"column": 14,
+					"label": "itemEditClass"
 				},
 				{
-					"line": 1384,
-					"column": 10,
+					"line": 1409,
+					"column": 13,
 					"label": "membersClass"
 				},
 				{
-					"line": 1458,
-					"column": 7,
-					"label": "end of membersClass"
+					"line": 1630,
+					"column": 18,
+					"label": "getAndShowContent"
 				},
 				{
-					"line": 1871,
-					"column": 4,
-					"label": ""
+					"line": 1861,
+					"column": 15,
+					"label": "ownerLogin"
 				}
 			]
 		},
@@ -74,37 +74,37 @@
 			"path": "lib/js/handlers.js",
 			"bookmarks": [
 				{
-					"line": 28,
+					"line": 16,
 					"column": 11,
 					"label": "topmenu"
 				},
 				{
-					"line": 64,
+					"line": 56,
 					"column": 14,
 					"label": "catPopup"
 				},
 				{
-					"line": 84,
+					"line": 76,
 					"column": 9,
 					"label": "sidebar"
 				},
 				{
-					"line": 230,
+					"line": 222,
 					"column": 14,
 					"label": "formDialog"
 				},
 				{
-					"line": 398,
+					"line": 405,
 					"column": 17,
 					"label": "contextmenu"
 				},
 				{
-					"line": 520,
+					"line": 512,
 					"column": 10,
 					"label": "contextPopup"
 				},
 				{
-					"line": 587,
+					"line": 580,
 					"column": 12,
 					"label": "keydown"
 				}
@@ -119,39 +119,29 @@
 					"label": ""
 				},
 				{
-					"line": 421,
+					"line": 397,
 					"column": 25,
 					"label": "addCategory"
 				},
 				{
-					"line": 602,
+					"line": 578,
 					"column": 21,
 					"label": "makemarrays"
 				},
 				{
-					"line": 686,
+					"line": 662,
 					"column": 20,
 					"label": "addItems"
 				},
 				{
-					"line": 1212,
+					"line": 1197,
 					"column": 7,
 					"label": "addMember"
 				},
 				{
-					"line": 1483,
+					"line": 1540,
 					"column": 16,
 					"label": "end of IDocsClass"
-				}
-			]
-		},
-		{
-			"path": "lib/js/hc_all.js",
-			"bookmarks": [
-				{
-					"line": 62,
-					"column": 9,
-					"label": ""
 				}
 			]
 		},
@@ -159,8 +149,8 @@
 			"path": "lib/js/myappmeta.js",
 			"bookmarks": [
 				{
-					"line": 27,
-					"column": 8,
+					"line": 31,
+					"column": 1,
 					"label": ""
 				}
 			]

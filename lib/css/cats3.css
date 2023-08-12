@@ -148,7 +148,8 @@ Styles for message which displays while the DOM is loading
    text-align: center;
    border: 2px solid black;
    border-radius: 4px;
-   position: absolute;
+   /* position: absolute; */
+   position: fixed;
    padding: 1rem 1.5rem;
    -webkit-box-shadow: 0px 0px 6px 3px #222;
    -moz-box-shadow: 0px 0px 6px 3px #222;
@@ -160,7 +161,7 @@ Styles for message which displays while the DOM is loading
    top: 0;
    left: 0;
    position: fixed;
-   background-color: #aaa;
+   background-color: #333;
    opacity: 0.6;
    width: 100%;
    height: 100%;
@@ -171,7 +172,8 @@ Styles for message which displays while the DOM is loading
 ********************************************* */
  #loading {
    z-index: 5000;
-   position: absolute;
+   /* position: absolute; */
+   position: fixed;
  }
 
  #loadingmask {
@@ -216,8 +218,6 @@ Styles for message which displays while the DOM is loading
    display: flex;
    align-items: center;
    justify-content: center;
-   /* width: 60px; */
-   /* height: 75px; */
    border: 1px solid black;
    position: absolute;
    z-index: 600;
@@ -231,8 +231,8 @@ Styles for message which displays while the DOM is loading
    width: 60px;
  }
 
- #frame video{
-  width:100px;
+ #frame video {
+   width: 100px;
  }
 
 
@@ -257,32 +257,34 @@ Styles for message which displays while the DOM is loading
    min-height: 70px;
  }
 
- #topdiv #topdivLeft,   #topdiv #topdivRight{
-  display:flex;
-  align-items: center;
-  /* align-items: baseline; */
+ #topdiv #topdivLeft,
+ #topdiv #topdivRight {
+   display: flex;
+   align-items: center;
  }
 
- #topdiv #topdivRight{
-  margin: 0.8rem 1rem;
+ #topdiv #topdivRight {
+   margin: 0.8rem 1rem;
  }
 
 
  #topdiv #profile {
-  display:flex;
-  justify-content: center;
-  /* image height is always 50px so make it 2px more to cater for border */
-  height:52px;
-  min-width: 32px;
-  background-color: #222;
-  border:1px solid #ccc;
-  margin: 6px 1.5rem;
-}
+   display: flex;
+   justify-content: center;
+   /* image height is always 50px so make it 2px more to cater for border */
+   width: 52px;
+   height: 52px;
+   /* min-width: 32px; */
+   background-color: #222;
+   border: 1px solid #ccc;
+   margin: 6px 1.5rem;
+ }
 
  #debug {
    font-size: 0.3rem;
-   position: absolute;
+   /* position: absolute; */
    color: #bbb;
+   align-self: flex-start;
  }
 
  #topdiv #siteName {
@@ -290,7 +292,7 @@ Styles for message which displays while the DOM is loading
    text-shadow: 2px 1px 0px #09f;
    font: 48px Cambria, 'Times New Roman', serif;
    font-weight: bold;
-   margin-top:5px;
+   margin-top: 5px;
  }
 
  #topdiv #pageName {
@@ -300,7 +302,7 @@ Styles for message which displays while the DOM is loading
    color: #bbb;
    padding: 0 10px;
    white-space: nowrap;
-   margin-top:20px;
+   margin-top: 20px;
 
  }
 
@@ -365,29 +367,19 @@ Styles for message which displays while the DOM is loading
    color: white;
  }
 
- #topdiv #memberPhoto{
-  width:40px;
-  height:40px;
-  background-color: #222;
-  border:1px solid #ccc;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  -khtml-border-radius: 20px;
-  overflow: hidden;
+ #topdiv #memberPhoto {
+  /* image size is 40x40 so add the border of 1px all around = 42px */
+   width: 42px;
+   height: 42px;
+   background-color: #222;
+   border: 1px solid #ccc;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border-radius: 20px;
+   -khtml-border-radius: 20px;
+   overflow: hidden;
  }
 
- #topdiv #memberPhoto img{
-
-  /* width:40px; */
-  /* height:40px; */
-max-width: 40px;
-max-height: 40px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  -khtml-border-radius: 20px;
- }
 
  /* ===================================================== */
 
@@ -419,14 +411,14 @@ max-height: 40px;
    position: relative;
  }
 
- #sidebarMask{
-  width:100%;
-  height:100%;
-  background-color: rgba(35, 35, 35, 0.9);
-  z-index: 10;
-  position:absolute;
-  top:0;
-  left:0;
+ #sidebarMask {
+   width: 100%;
+   height: 100%;
+   background-color: rgba(35, 35, 35, 0.9);
+   z-index: 10;
+   position: absolute;
+   top: 0;
+   left: 0;
  }
 
  #sidebarHeading {
@@ -535,6 +527,7 @@ max-height: 40px;
  }
 
  #formDialog input[type='text'],
+ #formDialog input[type='password'],
  #formDialog input[type='file'],
  #formDialog textarea,
  #formDialog select {
@@ -558,7 +551,7 @@ max-height: 40px;
  input[readonly="true"] {
    background-color: #ffd;
  }
-
+ 
  #formDialog textarea {
    margin: 0;
  }
@@ -580,22 +573,31 @@ max-height: 40px;
 
  .levelName {
    display: inline-block;
-   width: 160px;
+   width: 170px;
    padding: 2px 6px;
  }
 
- .hiddenCheckbox {
+ .viewCheckbox {
    display: inline-block;
-   padding-left: 15px;
    padding-right: 6px;
+ }
+
+ .viewCheckbox span {
+   padding-left: 1px;
+   padding-right: 4px;
+   margin-right: 4px;
+ }
+
+ .viewCheckbox input[type=checkbox] {
+   margin-right: 4px;
  }
 
 
  /* ****************************************
-          for display of photos
+          for display of photos, videos etc
 **************************************** */
 
- #showDialog {
+ #showBox {
    border: 2px solid black;
    position: fixed;
    z-index: 800;
@@ -609,8 +611,8 @@ max-height: 40px;
    -webkit-box-shadow: 0px 0px 6px 3px #fff;
  }
 
- /* mask to cover the whole view */
- #showDialogMask {
+ /* mask to cover the whole viewport */
+ #showBoxMask {
    position: fixed;
    top: 0;
    left: 0;
@@ -618,6 +620,20 @@ max-height: 40px;
    right: 0;
    background-color: rgba(0, 0, 0, 0.85);
    z-index: 750;
+ }
+
+ #closeButton{
+  position:absolute;
+  z-index: 5;
+  border: 1px solid #fff;
+  height: 27px;
+  background-color: #fff;
+  right:-10px;
+  top:-10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
  }
 
 
@@ -635,7 +651,7 @@ max-height: 40px;
 
  .itemTitle {
    padding: 3px;
-   font-weight: 600;
+   font-weight: 400;
    height: 22px;
    white-space: nowrap;
  }
@@ -643,14 +659,14 @@ max-height: 40px;
  #itemContainer {
    display: flex;
    justify-content: center;
-   /* padding:0 3px; */
-   padding:0 5px 5px;
+   padding: 0 5px 5px;
  }
 
  .itemHolder {
    display: flex;
    flex-direction: column;
    overflow: hidden;
+   max-width:82vw;
  }
 
  .itemHolder img {
@@ -658,30 +674,82 @@ max-height: 40px;
  }
 
  .itemHolder video {
-   /* border: 1px solid black; */
-   width:100%
+   width: 100%
  }
 
 
  .thumbVideo {
-  position: relative;
+   position: relative;
+   background-color: #444;
+   border: 1px solid white;
+   margin: 5px;
+   float: left;
+   text-align: center;
+   overflow: hidden;
+   width: 160px;
+   height: 120px;
+ }
+
+ .thumbVideo video {
+   width: 150px;
+   height: 100px;
+ }
+
+ .thumbVideo img {
+   position: absolute;
+   left: 51px;
+   top: 40px;
+   z-index: 10;
+ }
+
+ .listBlog, .listFile {
   background-color: #444;
   border: 1px solid white;
-   margin: 5px;
-  float:left;
+  margin: 5px;
+  float: left;
+  width: 240px;
+  height: 60px;
+  overflow: hidden;
 }
 
-.thumbVideo video {
-  width: 150px;
-  height: 100px;
+.listFile {
+  background-color: #444;
+  border: 1px solid #ddd;
+  margin: 5px;
+  float: left;
+  width: 240px;
+  height: 50px;
+  overflow: hidden;
+  font-size: medium;
 }
 
-.thumbVideo img {
-  position: absolute;
-  left: 51px;
-  top: 40px;
-  z-index: 10;
+.listBlog .itemTitle{
+  white-space: pre-wrap;
 }
+
+.listBlog .itemTitle span{
+  font-weight: 200;
+  font-size: small;
+}
+
+.listFile .itemTitle{
+  white-space: pre-wrap;
+}
+
+.listFile .itemTitle span{
+  font-weight: 200;
+  font-size: small;
+}
+
+#itemContainer object{
+  width:82vw;
+  width:620px;
+  width:800px;
+  width:840px;
+
+  height:93vh;
+}
+
 
 
  #startup {
@@ -960,9 +1028,10 @@ max-height: 40px;
      margin: 0.2rem 7.5%;
    }
 
-   #topdiv #topdivRight{
-    margin-bottom: 10px;
+   #topdiv #topdivRight {
+     margin-bottom: 10px;
+     margin-top: 5px;
    }
-  
+
 
  }
