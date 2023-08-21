@@ -152,10 +152,10 @@ java -client -jar gcc2.jar --js myNamespace2.js myJsLib1.js common.jQfree.js edu
 //************************ cats3.js
 
 // combined, PP, externs_cats.js
-java -client -jar "C:\Program Files\gCC2\gcc2.jar" --js  myNamespace2.js  myJsLib1.js  common2.js  myapp.js  myappmeta.js  hc_all.js  handlers.js  -O ADVANCED --language_out ECMASCRIPT3 --isolation_mode IIFE --formatting PRETTY_PRINT --externs externs_cats.js --js_output_file catsall.combined.PP.adv.min.js
+java -client -jar "C:\Program Files\gCC2\gcc2.jar" --js  myNamespace2.js  myJsLib1Cats3.js  common2Cats3.js  myapp.js  myappmeta.js  hc_all.js  handlers.js  -O ADVANCED --language_out ECMASCRIPT3 --isolation_mode IIFE --formatting PRETTY_PRINT --externs externs_cats.js --js_output_file catsall.combined.PP.adv.min.js
 
 // combined, externs_cats.js
-java -client -jar "C:\Program Files\gCC2\gcc2.jar" --js  myNamespace2.js  myJsLib1.js  common2.js  myapp.js  myappmeta.js  hc_all.js  handlers.js  -O ADVANCED --language_out ECMASCRIPT3 --isolation_mode IIFE --externs externs_cats.js --js_output_file catsall.combined.adv.min.js
+java -client -jar "C:\Program Files\gCC2\gcc2.jar" --js  myNamespace2.js  myJsLib1Cats3.js  common2Cats3.js  myapp.js  myappmeta.js  hc_all.js  handlers.js  -O ADVANCED --language_out ECMASCRIPT3 --isolation_mode IIFE --externs externs_cats.js --js_output_file catsall.combined.adv.min.js
 
 
 

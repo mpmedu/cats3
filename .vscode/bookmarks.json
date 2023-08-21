@@ -4,23 +4,18 @@
 			"path": "lib/css/cats3.css",
 			"bookmarks": [
 				{
-					"line": 244,
+					"line": 251,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 396,
+					"line": 403,
 					"column": 7,
 					"label": ""
 				},
 				{
-					"line": 505,
+					"line": 512,
 					"column": 8,
-					"label": ""
-				},
-				{
-					"line": 869,
-					"column": 6,
 					"label": ""
 				}
 			]
@@ -29,42 +24,42 @@
 			"path": "lib/js/myapp.js",
 			"bookmarks": [
 				{
-					"line": 222,
+					"line": 174,
 					"column": 14,
 					"label": "setState"
 				},
 				{
-					"line": 330,
+					"line": 249,
 					"column": 10,
 					"label": "catClass"
 				},
 				{
-					"line": 799,
+					"line": 713,
 					"column": 15,
 					"label": "showFormDialog"
 				},
 				{
-					"line": 914,
+					"line": 884,
 					"column": 16,
 					"label": "fillInInput"
 				},
 				{
-					"line": 1110,
+					"line": 1086,
 					"column": 14,
 					"label": "itemEditClass"
 				},
 				{
-					"line": 1409,
+					"line": 1385,
 					"column": 13,
 					"label": "membersClass"
 				},
 				{
-					"line": 1630,
+					"line": 1681,
 					"column": 18,
 					"label": "getAndShowContent"
 				},
 				{
-					"line": 1861,
+					"line": 1912,
 					"column": 15,
 					"label": "ownerLogin"
 				}
@@ -89,22 +84,22 @@
 					"label": "sidebar"
 				},
 				{
-					"line": 222,
+					"line": 223,
 					"column": 14,
 					"label": "formDialog"
 				},
 				{
-					"line": 405,
+					"line": 411,
 					"column": 17,
 					"label": "contextmenu"
 				},
 				{
-					"line": 512,
+					"line": 518,
 					"column": 10,
 					"label": "contextPopup"
 				},
 				{
-					"line": 580,
+					"line": 586,
 					"column": 12,
 					"label": "keydown"
 				}
@@ -119,27 +114,32 @@
 					"label": ""
 				},
 				{
-					"line": 397,
+					"line": 438,
 					"column": 25,
 					"label": "addCategory"
 				},
 				{
-					"line": 578,
+					"line": 608,
 					"column": 21,
 					"label": "makemarrays"
 				},
 				{
-					"line": 662,
+					"line": 691,
 					"column": 20,
 					"label": "addItems"
 				},
 				{
-					"line": 1197,
+					"line": 1212,
 					"column": 7,
 					"label": "addMember"
 				},
 				{
-					"line": 1540,
+					"line": 1377,
+					"column": 7,
+					"label": ""
+				},
+				{
+					"line": 1609,
 					"column": 16,
 					"label": "end of IDocsClass"
 				}
@@ -152,6 +152,21 @@
 					"line": 31,
 					"column": 1,
 					"label": ""
+				}
+			]
+		},
+		{
+			"path": "lib/js/common2Cats3.js",
+			"bookmarks": [
+				{
+					"line": 398,
+					"column": 6,
+					"label": "showMessage"
+				},
+				{
+					"line": 671,
+					"column": 27,
+					"label": "showContextPopup"
 				}
 			]
 		}

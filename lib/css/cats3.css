@@ -148,7 +148,6 @@ Styles for message which displays while the DOM is loading
    text-align: center;
    border: 2px solid black;
    border-radius: 4px;
-   /* position: absolute; */
    position: fixed;
    padding: 1rem 1.5rem;
    -webkit-box-shadow: 0px 0px 6px 3px #222;
@@ -172,7 +171,6 @@ Styles for message which displays while the DOM is loading
 ********************************************* */
  #loading {
    z-index: 5000;
-   /* position: absolute; */
    position: fixed;
  }
 
@@ -182,10 +180,19 @@ Styles for message which displays while the DOM is loading
    left: 0;
    position: fixed;
    background-color: #555;
-   opacity: 0.4;
+   opacity: 0.8;
    width: 100%;
    height: 100%;
  }
+
+ .flexContainer {
+   display: flex;
+   gap: 1rem;
+ }
+
+ /* .flexContainer > div{
+  border-right:1px solid black;
+ } */
 
  /* *********************************************
    for the context menu, ie right-clicking
@@ -368,7 +375,7 @@ Styles for message which displays while the DOM is loading
  }
 
  #topdiv #memberPhoto {
-  /* image size is 40x40 so add the border of 1px all around = 42px */
+   /* image size is 40x40 so add the border of 1px all around = 42px */
    width: 42px;
    height: 42px;
    background-color: #222;
@@ -505,6 +512,7 @@ Styles for message which displays while the DOM is loading
 
  #formDialog {
    display: inline-block;
+   /* min-width: 70%; */
    border: 2px solid black;
    position: relative;
    z-index: 600;
@@ -551,7 +559,7 @@ Styles for message which displays while the DOM is loading
  input[readonly="true"] {
    background-color: #ffd;
  }
- 
+
  #formDialog textarea {
    margin: 0;
  }
@@ -622,18 +630,18 @@ Styles for message which displays while the DOM is loading
    z-index: 750;
  }
 
- #closeButton{
-  position:absolute;
-  z-index: 5;
-  border: 1px solid #fff;
-  height: 27px;
-  background-color: #fff;
-  right:-10px;
-  top:-10px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -khtml-border-radius: 5px;
+ #closeButton {
+   position: absolute;
+   z-index: 5;
+   border: 1px solid #fff;
+   height: 27px;
+   background-color: #fff;
+   right: -10px;
+   top: -10px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   -khtml-border-radius: 5px;
  }
 
 
@@ -666,7 +674,7 @@ Styles for message which displays while the DOM is loading
    display: flex;
    flex-direction: column;
    overflow: hidden;
-   max-width:82vw;
+   max-width: 82vw;
  }
 
  .itemHolder img {
@@ -702,296 +710,40 @@ Styles for message which displays while the DOM is loading
    z-index: 10;
  }
 
- .listBlog, .listFile {
-  background-color: #444;
-  border: 1px solid white;
-  margin: 5px;
-  float: left;
-  width: 240px;
-  height: 60px;
-  overflow: hidden;
-}
 
-.listFile {
-  background-color: #444;
-  border: 1px solid #ddd;
-  margin: 5px;
-  float: left;
-  width: 240px;
-  height: 50px;
-  overflow: hidden;
-  font-size: medium;
-}
+ .listBlog,
+ .listFile {
+   background-color: #444;
+   border: 1px solid #ddd;
+   margin: 5px;
+   float: left;
+   width: 240px;
+   height: 50px;
+   overflow: hidden;
+   font-size: medium;
+ }
 
-.listBlog .itemTitle{
-  white-space: pre-wrap;
-}
+ .listBlog .itemTitle,
+ .listFile .itemTitle {
+   white-space: pre-wrap;
+ }
 
-.listBlog .itemTitle span{
-  font-weight: 200;
-  font-size: small;
-}
+ .listBlog .itemTitle span,
+ .listFile .itemTitle span {
+   font-weight: 200;
+   font-size: small;
+ }
 
-.listFile .itemTitle{
-  white-space: pre-wrap;
-}
-
-.listFile .itemTitle span{
-  font-weight: 200;
-  font-size: small;
-}
-
-#itemContainer object{
-  width:82vw;
-  width:620px;
-  width:800px;
-  width:840px;
-
-  height:93vh;
-}
-
+ #itemContainer object {
+   width: 82vw;
+   /* width:840px; */
+   height: 93vh;
+ }
 
 
  #startup {
    padding: 20px;
  }
-
-
- /*
- ***************************************
-           Audio volume slider
- ***************************************
-  */
-
- .roundCorners {
-   -moz-border-radius: 10px;
-   -webkit-border-radius: 10px;
-   border-radius: 10px;
-   -khtml-border-radius: 10px;
- }
-
- #cont {
-   position: relative;
-   width: 100px;
-   height: 18px;
-   padding: 1px;
-   border: 2px solid #888;
-   background-color: white;
- }
-
- #ball {
-   position: relative;
-   width: 12px;
-   height: 12px;
-   background-color: #1b1b1b;
- }
-
- .cont_class {
-   position: relative;
-   width: 80px;
-   height: 18px;
-   padding: 1px;
-   border: 2px solid #888;
-   background-color: white;
- }
-
- .ball_class {
-   position: relative;
-   width: 12px;
-   height: 12px;
-   background-color: #1b1b1b;
- }
-
- /**** Styles for the box for getting the settings for the audio volumes */
- .outer_sd {
-   width: 245px;
-   height: 2.5em;
-   position: relative;
- }
-
- .inner_sd {
-   position: absolute;
-   top: -1px;
-   right: 2px;
- }
-
- /* Audio volume slider.  END 
-    XXXXXXXXXXXXXXXXXXXXXXXXX */
-
-
-
-
- /* edu styles 
-    ======================================= */
-
-
-
- /* styles for showing the information at start, ie startupbox - also used for the unlockbox
-  ==============================================*/
- .boxHead1_class {
-   padding: 0.2em 0;
-   font: 1.2em Cambria, 'Times New Roman', serif;
-   font-weight: bold;
-   text-decoration: underline;
- }
-
- .boxContent1_class {
-   font: 1.1em Cambria, 'Times New Roman', serif;
-   width: 570px;
- }
-
-
- /* style for showing the information at start 
-  ==============================================*/
-
- /* .info_class {
-   display: inline-block;
-   margin: 0 6% 0.5em 3em;
-   padding: 0.2em 0;
-   font: 1.2em Cambria, 'Times New Roman', serif;
-   font-weight: bold;
-   text-decoration: underline;
-   cursor: pointer;
- } */
-
- /* .content_class {
-   margin: -0.6em 6% 0.5em 3em;
-   padding: 0 0.5em;
-   font: 1.1em Cambria, 'Times New Roman', serif;
-   width: 530px;
- } */
-
-
-
- /* ##############################################
-          from myExpl.css
-############################################## */
-
- #myExplorer {
-   position: absolute;
-   cursor: default;
-   /*    Use normal arrow pointer */
-   /* box-sizing: border-box; */
-   /* display:flex;
- align-items:center;
- justify-content:center; */
-   z-index: 3000;
-   width: 530px;
-   background-color: #f8f8f8;
-   padding: 10px;
-   text-align: left;
- }
-
- .myExp_div1 {
-   float: left;
-   margin: 0 18px;
- }
-
- .myExp_h3_cls1 {
-   height: 24px;
-   font-size: 15px;
-   margin: 0;
- }
-
- .myExp_div2 {
-   width: 225px;
-   height: 225px;
-   border: solid 2px #888;
-   background: #fff;
-   overflow: auto;
-
-   padding: 5px;
- }
-
- .fileList li.wait {
-   background: url(./icon/spinner.gif) left top no-repeat;
- }
-
- /* File Extensions - I will only allow qna file types */
- .fileList li>span.ext_qna {
-   background: url(./icon/world-1.gif) left top no-repeat;
-   /* background: url(./icon/file.png) left top no-repeat; */
- }
-
- .wait {
-   background: url(./icon/spinner.gif) left top no-repeat;
- }
-
- .directory {
-   display: inline-block;
-   /* background: url(./icon/directory.png) left top no-repeat; */
-   background: url(./icon/folder_closed.png) left top no-repeat;
-   width: 20px;
-   height: 16px;
-   margin-bottom: -3px;
-   margin-right: -2px;
- }
-
- .folder_open {
-   background: url(./icon/folder_open.png) left top no-repeat;
- }
-
- #myExplorer .itemName {
-   padding-left: 2px;
-   padding-right: 4px;
-   white-space: nowrap;
- }
-
- #myExplorer #itemPopup>span.itemName {
-   text-decoration: underline;
- }
-
- #myExplorer #itemPopup {
-   position: absolute;
-   background-color: #fff;
-   z-index: 3500;
- }
-
- #folders_div div.items>div {
-   position: relative;
-   margin-bottom: -1px;
-   white-space: nowrap;
-   height: 19px;
- }
-
- #files_div li>span {
-   padding-left: 19px;
-   padding-right: 4px;
-   line-height: 19px;
- }
-
- #files_div li>span:hover {
-   background-color: #eee;
- }
-
- .subcatlistdiv {
-   margin-left: 10px;
- }
-
- #myExplorer .itemName {
-   font-size: 13px;
- }
-
- #myExplorer .chosen {
-   /* background-color: #464 !important;
- color: white; */
-   background-color: #ddd !important;
- }
-
- #myExplorer span.indx {
-   position: absolute;
-   width: 14px;
- }
-
- #myExplorer span {
-   margin: 0;
-   padding: 0;
- }
-
- #myExplorer .holder {
-   margin-left: 16px;
- }
-
 
 
 
