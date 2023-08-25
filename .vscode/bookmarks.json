@@ -39,27 +39,32 @@
 					"label": "showFormDialog"
 				},
 				{
-					"line": 884,
+					"line": 878,
 					"column": 16,
 					"label": "fillInInput"
 				},
 				{
-					"line": 1086,
+					"line": 1093,
 					"column": 14,
 					"label": "itemEditClass"
 				},
 				{
-					"line": 1385,
+					"line": 1395,
 					"column": 13,
 					"label": "membersClass"
 				},
 				{
-					"line": 1681,
+					"line": 1528,
+					"column": 15,
+					"label": "getFiles"
+				},
+				{
+					"line": 1729,
 					"column": 18,
 					"label": "getAndShowContent"
 				},
 				{
-					"line": 1912,
+					"line": 1962,
 					"column": 15,
 					"label": "ownerLogin"
 				}
@@ -84,22 +89,22 @@
 					"label": "sidebar"
 				},
 				{
-					"line": 223,
+					"line": 234,
 					"column": 14,
 					"label": "formDialog"
 				},
 				{
-					"line": 411,
+					"line": 430,
 					"column": 17,
 					"label": "contextmenu"
 				},
 				{
-					"line": 518,
+					"line": 537,
 					"column": 10,
 					"label": "contextPopup"
 				},
 				{
-					"line": 586,
+					"line": 605,
 					"column": 12,
 					"label": "keydown"
 				}
@@ -134,12 +139,17 @@
 					"label": "addMember"
 				},
 				{
-					"line": 1377,
+					"line": 1339,
+					"column": 15,
+					"label": ""
+				},
+				{
+					"line": 1388,
 					"column": 7,
 					"label": ""
 				},
 				{
-					"line": 1609,
+					"line": 1620,
 					"column": 16,
 					"label": "end of IDocsClass"
 				}
