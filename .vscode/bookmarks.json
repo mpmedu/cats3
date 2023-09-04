@@ -4,17 +4,17 @@
 			"path": "lib/css/cats3.css",
 			"bookmarks": [
 				{
-					"line": 251,
+					"line": 265,
 					"column": 8,
 					"label": ""
 				},
 				{
-					"line": 403,
+					"line": 417,
 					"column": 7,
 					"label": ""
 				},
 				{
-					"line": 512,
+					"line": 526,
 					"column": 8,
 					"label": ""
 				}
@@ -29,42 +29,42 @@
 					"label": "setState"
 				},
 				{
-					"line": 249,
+					"line": 254,
 					"column": 10,
 					"label": "catClass"
 				},
 				{
-					"line": 713,
+					"line": 730,
 					"column": 15,
 					"label": "showFormDialog"
 				},
 				{
-					"line": 878,
+					"line": 875,
 					"column": 16,
 					"label": "fillInInput"
 				},
 				{
-					"line": 1093,
+					"line": 1092,
 					"column": 14,
 					"label": "itemEditClass"
 				},
 				{
-					"line": 1395,
+					"line": 1410,
 					"column": 13,
 					"label": "membersClass"
 				},
 				{
-					"line": 1528,
+					"line": 1556,
 					"column": 15,
 					"label": "getFiles"
 				},
 				{
-					"line": 1729,
+					"line": 1768,
 					"column": 18,
 					"label": "getAndShowContent"
 				},
 				{
-					"line": 1962,
+					"line": 2002,
 					"column": 15,
 					"label": "ownerLogin"
 				}
@@ -89,22 +89,22 @@
 					"label": "sidebar"
 				},
 				{
-					"line": 234,
+					"line": 235,
 					"column": 14,
 					"label": "formDialog"
 				},
 				{
-					"line": 430,
+					"line": 434,
 					"column": 17,
 					"label": "contextmenu"
 				},
 				{
-					"line": 537,
+					"line": 541,
 					"column": 10,
 					"label": "contextPopup"
 				},
 				{
-					"line": 605,
+					"line": 613,
 					"column": 12,
 					"label": "keydown"
 				}
@@ -134,22 +134,22 @@
 					"label": "addItems"
 				},
 				{
-					"line": 1212,
+					"line": 1227,
 					"column": 7,
 					"label": "addMember"
 				},
 				{
-					"line": 1339,
+					"line": 1380,
 					"column": 15,
 					"label": ""
 				},
 				{
-					"line": 1388,
+					"line": 1429,
 					"column": 7,
 					"label": ""
 				},
 				{
-					"line": 1620,
+					"line": 1661,
 					"column": 16,
 					"label": "end of IDocsClass"
 				}
@@ -159,7 +159,7 @@
 			"path": "lib/js/myappmeta.js",
 			"bookmarks": [
 				{
-					"line": 31,
+					"line": 32,
 					"column": 1,
 					"label": ""
 				}
@@ -174,7 +174,7 @@
 					"label": "showMessage"
 				},
 				{
-					"line": 671,
+					"line": 672,
 					"column": 27,
 					"label": "showContextPopup"
 				}

@@ -5,4 +5,5 @@
 /lib_bak/*.*
 *.js
 *.php
+*.txt
 *.jar
