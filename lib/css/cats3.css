@@ -188,11 +188,9 @@ Styles for message which displays while the DOM is loading
  .flexContainer {
    display: flex;
    gap: 1rem;
+   justify-content: space-between;
  }
 
- /* .flexContainer > div{
-  border-right:1px solid black;
- } */
 
  /* *********************************************
    for the context menu, ie right-clicking
@@ -207,7 +205,7 @@ Styles for message which displays while the DOM is loading
  }
 
 
- #contextPopup > div,
+ #contextPopup>div,
  #contextPopup .sub>div {
    margin: 0.2em;
    padding: 0.1em 0.8em;
@@ -223,7 +221,7 @@ Styles for message which displays while the DOM is loading
    white-space: nowrap;
  }
  */
- #contextPopup > div:hover,
+ #contextPopup>div:hover,
  #contextPopup .sub>div:hover {
    background-color: #444;
    color: white;
@@ -527,6 +525,7 @@ Styles for message which displays while the DOM is loading
  #formDialog {
    display: inline-block;
    /* min-width: 70%; */
+   min-width: 50%;
    border: 2px solid black;
    position: relative;
    z-index: 600;
@@ -593,10 +592,23 @@ Styles for message which displays while the DOM is loading
    padding-right: 12px;
  }
 
+  /* ****************************************
+          for display of checkboxes for viewChannels
+**************************************** */
+
+ #allowChannels {
+   display: inline-block;
+   border: 1px solid #444;
+ }
+
  .levelName {
    display: inline-block;
    width: 100px;
    padding: 2px 6px;
+ }
+
+ #channelsHeading .viewCheckbox {
+   margin-left: 3px;
  }
 
  .viewCheckbox {
@@ -605,13 +617,12 @@ Styles for message which displays while the DOM is loading
  }
 
  .viewCheckbox span {
-   padding-left: 1px;
-   padding-right: 4px;
-   margin-right: 4px;
+   display: inline-block;
+   width: 18px;
  }
 
  .viewCheckbox input[type=checkbox] {
-   margin-right: 4px;
+   width: 18px;
  }
 
 
@@ -688,7 +699,7 @@ Styles for message which displays while the DOM is loading
    display: flex;
    flex-direction: column;
    overflow: hidden;
-   max-width: 82vw;
+   /* max-width: 82vw; */
  }
 
  .itemHolder img {
