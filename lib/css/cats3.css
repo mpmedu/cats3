@@ -13,9 +13,23 @@
 
  html,
  body {
+   width: 100vw;
+   max-width: 100%;
+   min-width: 400px;
+   min-width: 350px;
+
    font-size: 16px;
    min-height: 100vh;
-   min-width: 500px;
+   overflow:auto;
+   height:auto;
+   /* height:100vh; */
+
+   /* min-width: 500px;
+   min-width: 300px;
+   min-width: 400px;
+   min-width: 350px; */
+   /* min-width:100vw; */
+   /* min-height: 100%;    doesn't work */
  }
 
  body {
@@ -592,7 +606,7 @@ Styles for message which displays while the DOM is loading
    padding-right: 12px;
  }
 
-  /* ****************************************
+ /* ****************************************
           for display of checkboxes for viewChannels
 **************************************** */
 
@@ -699,16 +713,15 @@ Styles for message which displays while the DOM is loading
    display: flex;
    flex-direction: column;
    overflow: hidden;
-   /* max-width: 82vw; */
  }
 
  .itemHolder img {
    border: 1px solid black;
  }
 
- .itemHolder video {
+ /* .itemHolder video {
    width: 100%
- }
+ } */
 
 
  .thumbVideo {
@@ -812,3 +825,18 @@ Styles for message which displays while the DOM is loading
 
 
  }
+
+ @media screen and (orientation:portrait) {
+   body {
+     height: 100vh;
+     width: 100vw;
+   }
+ }
+
+ @media screen and (orientation:landscape) {
+   body {
+     height: 100vh;
+     width: 100vw;
+   }
+ }
+
